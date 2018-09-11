@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title  %}
+	<link rel="stylesheet" type="text/CSS" href="static/style/Upload.css">
+	<title>New Price-List import</title>
+{%  endblock title %}
+
+{% block body  %}
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">File Uploader</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h2 class="cover-heading">Choose PriceList+Config File</h2>
+		<form id="upload_Files" action="" method="POST" enctype="multipart/form-data">
+		  <div class="form-group">
+		  	<label for="PriceList">Price-List</label>
+		    <input type="file" class="form-control-file" id="PriceList" name="file" accept=".xlsx, .xls, .csv" multiple>
+		  	<label for="ConfigrationFile">Config-File</label>
+		    <input type="file" class="form-control-file" id="ConfigrationFile" name="file" accept=".xlsx, .xls, .csv">
+		  </div>
+	        <p class="lead">
+	          <input type="submit" class="btn btn-lg btn-secondary" value="Upload!" id="upload-button" >
+	        </p>
+		</form>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Upload page <a href="https://getbootstrap.com/">DS Automation</a>, by <a>@ds0automation</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+{% endblock body  %}

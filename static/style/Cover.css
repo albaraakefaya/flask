@@ -1,0 +1,33 @@
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+
+}
+
+.navbar-brand{
+	text-align: center;
+}
+
+body, html {
+    height: 100%;
+    /*padding-top: 5rem;*/
+}
+.bg {
+    /* The image used */
+    background-image: url('../img/Cover.jpg');
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.file-field.big .file-path-wrapper {
+  height: 3.2rem; }
+  .file-field.big .file-path-wrapper .file-path {
+    height: 3rem; }
